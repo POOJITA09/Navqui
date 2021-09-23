@@ -81,7 +81,7 @@ const AttemptBlindQuiz = ({ match }) => {
 				if (quizData.error === 'ERR:QUIZ_NOT_FOUND')
 					speak('The quiz you requested was not found.')
 				// For Quiz not accessible
-				else if (quizData.error === 'ERR:QUIZ_ACCS_DENIED')
+				else if (quizData.error === 'ERR:QUIZ_ACCESS_DENIED')
 					speak('Access is not granted by the creator.')
 				else if (quizData.error === 'ERR:QUIZ_ALREY_ATTEMPtED')
 					speak('You have already attempted this quiz.')
