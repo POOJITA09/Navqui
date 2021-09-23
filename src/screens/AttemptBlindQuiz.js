@@ -337,7 +337,7 @@ const AttemptBlindQuiz = ({ match }) => {
 				</h3>
 			</div>
 		)
-	} else if (quizTitle === 'ERR:QUIZzzALREADY_ATTEMPTED') {
+	} else if (quizTitle === 'ERR:QUIZzzALREA_ATTEMPTED') {
 		// speak('You have already attempted this quiz.')
 		return (
 			<div className='loading'>
