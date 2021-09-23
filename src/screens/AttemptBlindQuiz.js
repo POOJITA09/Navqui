@@ -321,7 +321,7 @@ const AttemptBlindQuiz = ({ match }) => {
 		)
 	}
 	// For Quiz not accessible
-	else if (quizTitle === 'ERR:QUIZ_ACCESS_DENIED') {
+	else if (quizTitle === 'ERR:QUIZ_ACCESDENIED') {
 		// speak('Access is not granted by the creator.')
 		return (
 			<div className='loading'>
