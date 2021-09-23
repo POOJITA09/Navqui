@@ -83,7 +83,7 @@ const AttemptBlindQuiz = ({ match }) => {
 				// For Quiz not accessible
 				else if (quizData.error === 'ERR:QUIZ_ACCS_DENIED')
 					speak('Access is not granted by the creator.')
-				else if (quizData.error === 'ERR:QUIZ_ALREY_ATTEMPTED')
+				else if (quizData.error === 'ERR:QUIZ_ALREY_ATTEMPED')
 					speak('You have already atempted this quiz.')
 			} else {
 				setQuizTitle(quizData.title)
