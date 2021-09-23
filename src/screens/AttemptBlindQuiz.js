@@ -66,7 +66,7 @@ const AttemptBlindQuiz = ({ match }) => {
 	// Fetch Quiz Data useEffect
 	useEffect(() => {
 		const fetchQuiz = async () => {
-			const res = await fetch('/API/quizzes/join', {
+			const res = await fetch('/API/quizz/join', {
 				method: 'POST',
 				body: JSON.stringify({ quizId: quizCode, uid }),
 				headers: {
