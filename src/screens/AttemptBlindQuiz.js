@@ -168,7 +168,7 @@ const AttemptBlindQuiz = ({ match }) => {
 				command: 'Instructions',
 				callback: () => {
 					speak(
-						'Use following comman to interat with applcation. Start Quiz to initialize the quiz. Repeat the current question command to repeat the focused question. Select or choose option number command for choosing the correct option. Next question to move to the next consecutive question and Previous Question to move to the previous consecutive question.'
+						'Use following comman to interat with application. Start Quiz to initialize the quiz. Repeat the current question command to repeat the focused question. Select or choose option number command for choosing the correct option. Next question to move to the next consecutive question and Previous Question to move to the previous consecutive question.'
 					)
 					resetTranscript()
 				}
@@ -255,7 +255,7 @@ const AttemptBlindQuiz = ({ match }) => {
 
 						setCurrentIndex(number - 1)
 						speakQuestion(number - 1)
-					} else speak('Question Number not recogniz Kindly repeat it')
+					} else speak('Question Number not recognize Kindly repeat it')
 					resetTranscript()
 				},
 				matchInterim: true
