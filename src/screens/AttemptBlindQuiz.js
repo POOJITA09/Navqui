@@ -32,13 +32,13 @@ const AttemptBlindQuiz = ({ match }) => {
 	const spaceFunction = React.useCallback(
 		(event) => {
 			if (event.keyCode === 32) {
-				if (quizTitle === 'ERR:QUIZ_NOT_FOUND')
+				if (quizTitle === 'ERR:QUIZNOT_FOUND')
 					speak('The quiz you requested was not at all found.')
 				// For Quiz not accessible
 				else if (quizTitle === 'ERR:QUIZ_ACCESS_DENIED')
 					speak('Access not grant by the creator.')
 				else if (quizTitle === 'ERR QUIZ_ALREADY_ATTEMPTED')
-					speak('You have already attempted this quiz #poo ')
+					speak('You have already attempted quiz #poo ')
 				else {
 					SpeechRecognition.startListening({ continuous: true })
 					console.log('start listeng..')
