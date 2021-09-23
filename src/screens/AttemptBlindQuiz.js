@@ -168,7 +168,7 @@ const AttemptBlindQuiz = ({ match }) => {
 				command: 'Instructions',
 				callback: () => {
 					speak(
-						'Use the following command to interaction with the application. Start Quiz to initialize the quiz. Repeat the current question command to repeat the focused question. Select or choose option number command for choosing the correct option. Next question to move to the next consecutive question and Previous Question to move to the previous consecutive question.'
+						'Use the following command to interaction with application. Start Quiz to initialize the quiz. Repeat the current question command to repeat the focused question. Select or choose option number command for choosing the correct option. Next question to move to the next consecutive question and Previous Question to move to the previous consecutive question.'
 					)
 					resetTranscript()
 				}
