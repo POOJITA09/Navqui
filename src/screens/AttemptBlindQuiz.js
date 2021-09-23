@@ -255,7 +255,7 @@ const AttemptBlindQuiz = ({ match }) => {
 
 						setCurrentIndex(number - 1)
 						speakQuestion(number - 1)
-					} else speak('Question Number not recognized. Kindly repeat it')
+					} else speak('Question Number not recogniz Kindly repeat it')
 					resetTranscript()
 				},
 				matchInterim: true
