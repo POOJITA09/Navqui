@@ -33,7 +33,7 @@ const AttemptBlindQuiz = ({ match }) => {
 		(event) => {
 			if (event.keyCode === 32) {
 				if (quizTitle === 'ERR:QUIZ_NOT_FOUND')
-					speak('The quiz you requested was not found.')
+					speak('The quiz you requested was not at all found.')
 				// For Quiz not accessible
 				else if (quizTitle === 'ERR:QUIZ_ACCESS_DENIED')
 					speak('Access is not granted by the creator.')
