@@ -78,7 +78,7 @@ const AttemptBlindQuiz = ({ match }) => {
 			if (quizData.error) {
 				// SpeechRecognition.stopListening()
 				setQuizTitle(quizData.error)
-				if (quizData.error === 'ERR:QUIZ_NOT_FOUND')
+				if (quizData.error === 'ERROR:QUIZ_NOT_FOUND')
 					speak('The quiz you requested was not found.')
 				// For Quiz not accessible
 				else if (quizData.error === 'ERR:QUIZ_ACCESS_DENIED')
