@@ -37,7 +37,7 @@ const AttemptBlindQuiz = ({ match }) => {
 				// For Quiz not accessible
 				else if (quizTitle === 'ERR:QUIZ_ACCESS_DENIED')
 					speak('Access not grant by the creator.')
-				else if (quizTitle === 'ERR QUIZ_ALREADY_ATTEMPTED')
+				else if (quizTitle === 'ERR QUIZ_ALREADYATTEMPTED')
 					speak('You have attempted quiz #poo ')
 				else {
 					SpeechRecognition.startListening({ continuous: true })
