@@ -32,10 +32,10 @@ const AttemptBlindQuiz = ({ match }) => {
 	const spaceFunction = React.useCallback(
 		(event) => {
 			if (event.keyCode === 32) {
-				if (quizTitle === 'ERR:QUIZNOT_FOUND')
+				if (quizTitle === 'ERR:QUIZNOT')
 					speak('The quiz you requested was not at all found.')
 				// For Quiz not accessible
-				else if (quizTitle === 'ERR:QUIZ_ACCESS_DENIED')
+				else if (quizTitle === 'ERR:QUIACCESS_DENIED')
 					speak('Access not grant by the creator.')
 				else if (quizTitle === 'ERR QUIZ_ALREADYATTEMPTED')
 					speak('You have attempted quiz #poo ')
